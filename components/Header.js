@@ -14,10 +14,10 @@
 const headerDiv = document.querySelector('div.header-container')
 
 function Header(){
-    const title = document.createElement('.div');
-    const date = document.createElement('.span');
+    const title = document.createElement('div');
+    const date = document.createElement('span');
     const opener = document.createElement('h1');
-    const temp = document.createElement('.span');
+    const temp = document.createElement('span');
     
     title.classList.add('header');
     date.classList.add('date');
@@ -27,11 +27,11 @@ function Header(){
     opener.textContent = 'Lambda Times';
     temp.textContent = '98°';
 
-    title.appendChild(date)
-    title.appendChild(opener)
-    title.appendChild(temp)
+    title.appendChild(date);
+    title.appendChild(opener);
+    title.appendChild(temp);
 
-return title
+    return title;
 }
 
-headerDiv.append(Header);
+headerDiv.append(Header());
